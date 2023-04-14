@@ -1,0 +1,8 @@
+Pasos a seguir para programar OLED:
+1-Abrimos la consola de windows y escribimos pip install adafruit-ampy
+2-Descomprimimos el .rar que se llama OLED.rar en el escritorio.
+3-Abrimos la consola de windows, y nos dirigimos a la carpeta en el escritorio llamado OLED, a traves del comando "cd"
+4.Ejecutamos el siguiente codigo, el cual remplazaremos COMX por el COM correspondiente a donde este enchufado el KMI "ampy -p COMX put ssd1306.py"
+5.Abrimos Mu, e iniciamos un nuevo programa, el cual pondremos como instruccion simplemente "import ssd1306". Si el programa no arroja errores, significa que se instalo correctamente la libreria dentro de la ESP32.
+6.En el Mu, abrimos el archivo "main.py" el cual esta dentro de la carpeta OLED.
+7.Listo, ya podemos programar tranquilamente la pantalla OLED.

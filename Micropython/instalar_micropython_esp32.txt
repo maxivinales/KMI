@@ -1,0 +1,19 @@
+Pasos a seguir:
+
+1 - Instalar python (ultima versión) desde https://www.python.org/downloads/
+2 - Instalar ESPtool: se abre el cmd y se ejecuta
+  pip install esptool
+or  
+  python -m pip install esptool
+or
+  pip2 install esptool
+
+se ejecuta esptool.py
+  
+3 - se limpia la memoria flash:
+  esptool.py --chip esp32 --port COMX erase_flash
+  (mientras se presiona el boton boot - no se puede en el KMI)
+4 - Instalar el firmware en la ESP32, descargado desde https://micropython.org/download/esp32/
+  copiar y pegar desde la pagina el codigo
+
+esptool.py --chip esp32 --port COMX --baud 460800 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
